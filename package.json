@@ -1,0 +1,22 @@
+{
+  "name": "webstudy",
+  "version": "1.0.0",
+  "description": "adminpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestplatform/adminpage.git"
+  },
+  "author": "admin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestplatform/adminpage/issues"
+  },
+  "homepage": "https://github.com/bestplatform/adminpage#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
