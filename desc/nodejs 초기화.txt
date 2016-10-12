@@ -1,0 +1,14 @@
+npm init
+package.json 파일 생성(node의 기본정보 담김)
+
+module dependency로 설치
+npm install(--save: 설치후 저장, -g: global로 설치)
+npm install express --save(express module install)
+
+우리가 만든 app을 자동으로 실행시켜주는 모듈
+npm install -g nodemon
+$nodemon (실행할 페케지 폴더에서 실행)
+
+$ npm install mongoose --save
+$ npm install ejs --save
+$ npm install body-parser --save

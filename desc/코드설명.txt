@@ -1,0 +1,11 @@
+__dirname
+node 에서 제공하는 node 파일의 경로를 담고 있는 변수
+
+app.use(express.static(path.join(__dirname, 'public')))
+path package는 node에서 기본으로 제공되는 package
+
+미들웨어(middleware)란?
+ 서버에 도착한 신호는 router를 통해서 어떤 response를 할지 결정이 되는데,
+ router를 통하기 전에(서버도착 - router 중간에) 모든 신호들에게 수행되는 명령어를
+ 미들웨어(middleware)라고 합니다.
+ app.use()를 통해 수행될 수 있으며, 당연히 router보다 위에 위치해야 합니다. 
