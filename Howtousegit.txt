@@ -1,26 +1,33 @@
-git을 사용하기 위해서는 user.email과 user.name을 등록해야 합니다
-$ git config --global user.email "<이메일 주소>"
-$ git config --global user.name "<이름>"
-echo는 리눅스 명령어 입니다. README.md 파일에 # my_app 를 삽입합니다. README.md파일이 없는 경우 생성하고 삽입합니다.
-echo # my_app >> README.md
-git init
-git remote add origin http://github.com/imtaekh/my_app.git
-온라인 저장소를 설정합니다.(origin을 해당 주소로 설정)
+git의 초기화
+  1. user.email과 user.name를 등록한다.
+      전역 변수로 선언할때(--global), 지역 변수로 선언할때 (--global을 제거)
+      ex)$ git config --global user.email "<이메일 주소>"
+         $ git config --global user.name "<이름>"
 
-git add .
-git commit -m "<commit message>"
-git push -u origin master
+  2. git의 초기 설정 자동완성
+      $ git init
 
-git pull
+  3. 파일이 저장될 리모트 저장소 지정
+      $ git remote add origin http://github.com/imtaekh/my_app.git
+      온라인 저장소를 설정합니다.(origin을 해당 주소로 설정)
 
-git clone + <해당 github주소>를 하면 해당 온라인 저장소가 내 컴퓨터로 다운로드 됩니다
+git 서버에 저장
+  1. 변경된 내용을 컴퓨터 내부 git 저장소에 저장
+      $ git add .(.은 한칸띄어서)
+  2. 변경된 내용의 설명을 작성한다.
+      $ git commit -m "<commit message>"
+  3. 리모트(서버)에 저장한다.
+      $ git push -u origin master
 
-git log
+git 서버의 내용을 내컴퓨터에 저장
+  git pull
+  git clone + <해당 github주소>를 하면 해당 온라인 저장소가 내 컴퓨터로 다운로드 됩니다
+
 모든 commit들과 디테일을 보여줍니다.
-git log --oneline
+git log
+
 commit id의 일부와 commit message만 보여줍니다.
-git reset <commit id> --hard
-해당 commit으로 돌아갑니다.
+git log --oneline
 
-
-TEST 중입니다
+해당 commit으로 돌아가기
+git reset --hard <commit id>
