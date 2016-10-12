@@ -31,3 +31,5 @@ git log --oneline
 
 해당 commit으로 돌아가기
 git reset --hard <commit id>
+
+adminbranch Test
