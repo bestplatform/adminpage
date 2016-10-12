@@ -21,3 +21,6 @@ git log --oneline
 commit id의 일부와 commit message만 보여줍니다.
 git reset <commit id> --hard
 해당 commit으로 돌아갑니다.
+
+
+TEST 중입니다
